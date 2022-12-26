@@ -1,3 +1,5 @@
+package pojo;
+
 public interface Compa {
-    public void draw();
+    public void draw(String name);
 }

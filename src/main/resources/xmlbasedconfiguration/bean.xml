@@ -1,14 +1,12 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="toolsList" class="beans.tools.ToolsList"></bean>
-    <bean id="ruler" class="beans.tools.Ruler"></bean>
-    <bean id="Student" class="beans.Student">
-        <property name="toolsList" ref="toolsList"/>
+    <bean id="circle" class="pojo.Circle"/>
+    <bean id="retangle" class="pojo.Retangle"/>
+    <bean id="square" class="pojo.Square"/>
+    <bean id="student" class="pojo.Student" autowire="byType">
     </bean>
 </beans>
